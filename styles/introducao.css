@@ -7,6 +7,7 @@
   align-items: center;
   gap: 100px;
   margin-top: 100px;
+  justify-content: center;
 }
 
 .introducaoContent {
@@ -32,4 +33,37 @@
 .introducaoContent > p {
   font-size: 1.25rem;
   padding: 20px 0px;
+}
+
+@media (max-width: 1200px) {
+  .introducaoContent h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    margin: 0px;
+  }
+  .introducao {
+    max-width: 250px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .introducaoContent h1 {
+    font-size: 2rem;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .introducaoContent p {
+    font-size: 1rem;
+    text-align: justify;
+    white-space: nowrap;
+  }
+  .introducao img {
+    display: none;
+  }
+  .introducaoContent::before {
+    top: 5px;
+  }
 }

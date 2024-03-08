@@ -100,3 +100,28 @@
 .idiomas-content strong {
   color: rgb(161, 160, 158);
 }
+
+@media (max-width: 500px) {
+  .formacao-container {
+    max-width: 250px;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .formacao-container h2 {
+    font-size: 2.5rem;
+    max-width: 250px;
+    text-align: center;
+  }
+  .formacao-grid p {
+    max-width: 250px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .formacoes {
+    flex-direction: column;
+    text-align: center;
+  }
+  .formacao-content::before {
+    top: 65px;
+  }
+}

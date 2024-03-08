@@ -36,3 +36,29 @@ footer {
   padding: 10px 20px;
   border-radius: 10px;
 }
+
+@media (max-width: 500px) {
+  .footer-grid {
+    max-width: 250px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .texto-disponibilidade {
+    font-size: 1rem;
+    max-width: 250px;
+    text-align: center;
+  }
+  .contatos {
+    max-width: 250px;
+    text-align: center;
+    margin: 0;
+  }
+  .contatos h2 {
+    font-size: 1rem;
+    max-width: 250px;
+    text-align: center;
+  }
+  .links-redes-sociais {
+    justify-content: center;
+  }
+}

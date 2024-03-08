@@ -79,3 +79,49 @@
   padding: 10px 15px;
   border-radius: 10px;
 }
+
+@media (max-width: 1200px) {
+  .experiencia-subtitulo {
+    font-size: 7rem;
+  }
+
+  .experiencia {
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .experiencia {
+    max-width: 250px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    justify-items: center;
+  }
+  .experiencia-subtitulo {
+    text-align: center;
+    font-size: 2rem;
+    white-space: nowrap;
+    max-width: 250px;
+  }
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+  .empresa-texto {
+    font-size: 1rem;
+  }
+  .empresa-conhecimentos li {
+    font-size: 0.75rem;
+  }
+  .empresa-ano {
+    left: 150px;
+    top: 20px;
+    text-align: right;
+    width: 80px;
+  }
+  .experiencia-grid > p {
+    font-size: 1.125rem;
+    max-width: 250px;
+    text-align: center;
+  }
+}
